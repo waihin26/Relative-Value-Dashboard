@@ -1,0 +1,8 @@
+streamlit
+numpy
+pandas
+networkx
+scikit-learn
+statsmodels
+yfinance
+python-dateutil

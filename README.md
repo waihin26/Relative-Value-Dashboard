@@ -41,29 +41,4 @@ Notes and customization
 - Yields are treated in percentage points (p.p.). The code converts some Yahoo yield tickers (e.g., `^TNX`) to p.p.
 - The default approach estimates pair hedge ratio β by OLS on levels (Engle–Granger). Consider using Johansen tests for multi-asset cointegration if you need basket construction.
 
-How to add this project to Git
-1. Initialize a repository (if not already):
 
-```bash
-git init
-git add .
-git commit -m "Initial import: add Streamlit relative-value dashboard"
-```
-
-2. To push to GitHub (create a remote first on github.com), then:
-
-```bash
-git remote add origin git@github.com:<your-username>/<repo>.git
-git branch -M main
-git push -u origin main
-```
-
-Security & operational notes
-- Do not commit credentials or private data. Replace Yahoo data calls with secure vendor adapters when running in production. Consider limiting history and caching of sensitive datasets.
-
-License
-- Add a LICENSE file if you plan to open-source this project.
-
-If you'd like, I can also:
-- Create a minimal GitHub Actions workflow to run a quick syntax check, or
-- Replace Yahoo calls with a template function to read CSVs or an internal API.
